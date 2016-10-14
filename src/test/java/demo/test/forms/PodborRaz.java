@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import webdriver.BaseForm;
 import webdriver.elements.Button;
 import webdriver.elements.Label;
+import webdriver.elements.Select;
 import webdriver.elements.TextBox;
 
 /**
@@ -11,8 +12,8 @@ import webdriver.elements.TextBox;
  */
 public class PodborRaz extends BaseForm {
 
-    private Button raz = new Button(By.xpath("//select[contains(@data-bind, 'from')]//option[@value='390']"),"razmer tv");
-    private Button raz1 = new Button(By.xpath("//select[contains(@data-bind, 'to')]//option[@value='420']"),"razmer tv");
+    private Select raz = new Select(By.xpath("//select[contains(@data-bind, 'from')]//option[@value='390']"),"razmer tv");
+    private Select raz1 = new Select(By.xpath("//select[contains(@data-bind, 'to')]//option[@value='420']"),"razmer tv");
 
     public PodborRaz() {
         super(By.xpath("//select[contains(@data-bind, 'from')]//option[@value='390']"), "razmer tv");
